@@ -1,0 +1,31 @@
+{
+  "name": "chef-patissier-task-watch",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Samuel Joos <sjoos@prophets.be>",
+  "homepage": "https://github.com/Prophets/chef-patissier/tree/master/packages/chef-patissier-task-watch#readme",
+  "license": "MIT",
+  "main": "lib/chef-patissier-task-watch.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prophets/chef-patissier.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/Prophets/chef-patissier/issues"
+  },
+  "dependencies": {
+    "chef-patissier": "^0.0.0",
+    "chef-patissier-task-browsersync": "^0.0.0",
+    "gulp": "^4.0.0"
+  }
+}
