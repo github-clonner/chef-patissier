@@ -1,11 +1,10 @@
 {
-  "name": "chef-patissier-recipe-dameblanche",
+  "name": "chef-patissier-recipe-web",
   "version": "0.0.0",
   "description": "> TODO: description",
   "author": "Samuel Joos <sjoos@prophets.be>",
   "homepage": "https://github.com/Prophets/chef-patissier/tree/master/packages/chef-patissier-dameblanche#readme",
   "license": "MIT",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Prophets/chef-patissier.git"

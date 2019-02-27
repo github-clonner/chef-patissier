@@ -27,7 +27,7 @@ const getFlatTasks = () => {
 
 const getTaskConfig = (taskName) => {
     const task = getFlatTasks().find((task) => task[0] === taskName);
-    return defaultsDeep(configLoader(taskName), task[1]);
+    return defaultsDeep(configLoader(taskName), task && task[1]);
 }
 
 const getConfig = (configName) => {

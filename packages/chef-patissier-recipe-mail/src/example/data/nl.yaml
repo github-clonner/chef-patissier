@@ -1,0 +1,42 @@
+title: 'Example e-mail title nl'
+blocks:
+    -
+        type: 'header'
+        data:
+            img:
+                mobile: 'header.jpg'
+                desktop: 'header.jpg'
+                alt: 'Lorem ipsum alt.'
+            url: 'https://www.prophets.be'
+    -
+        type: 'content'
+        data:
+            intro: 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.'
+            button:
+                enabled: true
+                txt: 'Lorem ipsum button'
+                url: 'https://www.prophets.be/'
+            outro: 'Lorem ipsum outro.'
+articles:
+    -
+        title: 'test'
+    -
+        title: 'test'
+    -
+        title: 'test'
+    -
+        title: 'test'
+    -
+        title: 'test'
+
+logos:
+    -
+        src:  'https://logopond.com/logos/1f64f627917a903c6b00141115b9f9f4.png'
+    -
+        src:  'https://logopond.com/logos/0a63157074e5b0ad22ed9b34c17ff95c.png'
+    -
+        src:  'https://logopond.com/logos/4b1458100e2f6c65fb77115e4743d63f.png'
+    -
+        src:  'https://logopond.com/logos/4b1458100e2f6c65fb77115e4743d63f.png'
+    -
+        src:  'https://logopond.com/logos/37fc7f6f33cb2902c57224fa530ad383.png'

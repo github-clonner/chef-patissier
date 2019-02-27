@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Overview E-mail Templates</title>
+        <style>
+            html, body {
+                background-color: #fff;
+                color: #636b6f;
+                font-family: 'Nunito', sans-serif;
+                font-weight: 200;
+                height: 100vh;
+                margin: 0;
+                padding: 1rem;
+            }
+
+            h1 {
+                text-transform: uppercase;
+                color: #000;
+            }
+
+            a {
+                color: #00aac3;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            ul {
+                margin-bottom: 1rem;
+            }
+
+            ul:first-child {
+                padding: 0;
+            }
+
+            ul:first-child > li {
+                display: inline-block;
+                background: #000;
+                color: #fff;
+                padding: 5px 7px;
+                margin-bottom: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>E-mail template framework overview</h1>
+        <div>
+            <ul>
+            {% for item in data %}
+                <li>{{ item.dir }}</li>
+                <ul>
+                    {% for file in item.files %}
+                    <li>
+                        <a href="{{ item.dir }}/{{ file }}">{{ file }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            {% endfor %}
+            </ul>
+        </div>
+    </body>
+</html>

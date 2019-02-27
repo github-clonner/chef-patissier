@@ -19,6 +19,7 @@ const bootstrap = (config) => {
 
     gulpTasks.default = taskRequire('default');
     gulpTasks.watch = taskRequire('watch');
+
     return gulpTasks;
 };
 
