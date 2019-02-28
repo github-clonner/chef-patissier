@@ -7,7 +7,7 @@ import MailContext from '../context/mail';
 const Image = ({ src, srcset, cssClass, fullWidth, ...otherProps }) => {
     return <MailContext.Consumer>
         {
-            data => (
+            ({ data }) => (
                 <MjmlImage
                     mjClass='image'
                     src={data.imagesDestination + '/' + src}
