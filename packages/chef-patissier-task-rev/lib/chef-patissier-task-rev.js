@@ -8,5 +8,5 @@ module.exports = gulp.series(
     // 3) Rev and compress CSS and JS files (this is done after assets, so that if a referenced asset hash changes, the parent hash will change as well
     require('./rev-css'),
     // 4) Update asset references in HTML
-    require('./rev-update-html'),
+    require('./rev-update-html')
 );

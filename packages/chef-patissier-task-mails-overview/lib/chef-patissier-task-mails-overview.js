@@ -17,7 +17,6 @@ const getData = () => {
 
     let allData = {};
     allData.data = [];
-
     dirs.forEach((dir) => {
         const files = fs.readdirSync(path.join(config.root.dest, dir)).filter((file) => {
             return fs.statSync(path.join(config.root.dest, dir, file)).isFile();
@@ -31,8 +30,8 @@ const getData = () => {
 
 const overviewTask = () => {
     const paths = {
-        src: path.join(config.root.src, config.tasks.overview.src, config.tasks.overview.mainFile),
-        dest: path.join(config.root.dest, config.tasks.overview.dest)
+        src: path.join(config.root.src, taskConfig.src, taskConfig.mainFile),
+        dest: path.join(config.root.dest, taskConfig.dest)
     }
 
     return gulp.src(paths.src)
@@ -46,7 +45,8 @@ const overviewTask = () => {
         }))
         .on('error', handleErrors)
         .pipe(gulp.dest(config.root.dest))
-        .pipe(customNotifier({ title: 'Overview created.' }));
+        .on('error', handleErrors)
+        .pipe(customNotifier({ title: 'Overview created.' }))
 }
 
 module.exports = overviewTask;

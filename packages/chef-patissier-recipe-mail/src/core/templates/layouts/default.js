@@ -23,13 +23,13 @@ const DefaultHead = ({ content, attributes, core, folder }) => (
     <>
         <MjmlTitle>{ content.title }</MjmlTitle>
 
-        <MjssStyle folder={folder} src={'/css/mjss.css'} />
+        <MjssStyle folder={folder} src={'mjss.css'} />
 
         { (core.fonts || []).map(({ name, href }, key) => (
             <MjmlFont key={key} href={href} name={name}/>
         )) }
-        <CssStyle folder={folder} src={'/css/styles.css'} inline={true} />
-        <CssStyle folder={folder} src={'/css/queries.css'} inline={false} />
+        <CssStyle folder={folder} src={'styles.css'} inline={true} />
+        <CssStyle folder={folder} src={'queries.css'} inline={false} />
     </>
 );
 

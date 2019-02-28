@@ -21,9 +21,12 @@ const config = {
         ['clean'],
         ['eslint', 'stylelint'],
         ['images'],
-        ['mails', 'mails-overview'],
-        [['rev', { ifProduction: true }]],
-        [['sizeReport', { ifProduction: true }]]
+        [['css', {
+            src: '*/sass',
+            dest: ''
+        }]],
+        ['mails'],
+        [[ 'mails-overview', { disableWatch: true } ]]
     ]
 };
 

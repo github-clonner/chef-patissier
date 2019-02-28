@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "gulp",
-    "build": "gulp production --build",
+    "build": "gulp --production",
     "upload": "gulp upload"
   },
   "bugs": {

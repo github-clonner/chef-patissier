@@ -7,14 +7,14 @@ const taskRequire = require('chef-patissier/lib/taskRequire');
 const browserSync = taskRequire('browsersync');
 
 const watchFiles = () => {
-
     const tasks = getEnabledTasks().enabledTasksAsStrings;
     tasks.forEach((taskName) => {
         if (taskName !== 'clean') {
             const task = config.getTaskConfig(taskName);
-            const glob = path.join(config.root.src, task.src, '**/*.{' + task.extensions.join(',') + '}');
-
-            gulp.watch(glob, { usePolling: true }, taskRequire(taskName));
+            if (!task.disableWatch) {
+                const glob = path.join(config.root.src, task.src, '**/*.{' + task.extensions.join(',') + '}');
+                gulp.watch(glob, { usePolling: true }, taskRequire(taskName));
+            }
         }
     });
 };

@@ -3,10 +3,14 @@ import {
 } from 'mjml-react';
 import fs from 'fs';
 
-const CssStyle = ({ src, inline, folder }) => (
-    <MjmlStyle inline={inline}>
-        { String(fs.readFileSync(`${__dirname}/../../../../public/${ folder }${src}`)) }
-    </MjmlStyle>
-);
+const CssStyle = ({ src, inline, folder }) => {
+    let css = '';
+    try {
+        css = fs.readFileSync(`${__dirname}/../../../../public/${ folder }/sass/${src}`);
+    } catch (e) {}
+    return <MjmlStyle inline={inline}>
+        { css }
+    </MjmlStyle>;
+};
 
 export default CssStyle;

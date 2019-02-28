@@ -2,7 +2,8 @@ const gulp = require('gulp');
 const revReplace = require('gulp-rev-replace');
 const path = require('path');
 const config = require('chef-patissier/lib/configLoader');
-const templatesConfig = config.getTaskConfig('templates');
+let revConfig = config.getTaskConfig('rev');
+let templatesConfig = config.getTaskConfig(revConfig.htmlTask);
 
 // 5) Update asset references in HTML
 const revUpdateHTMLTask = () => {

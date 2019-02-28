@@ -80,7 +80,6 @@ const reactMjmlRender = function () {
                 cb();
             }
         } catch(e) {
-            console.log(e);
             let message = e.message;
             if(message.indexOf('ValidationError:') === 0 ){
                 message = message + '\n \nNOTE: If you have no other option then forcing this markup set config.emails.mjml.validationLevel to "soft"';
