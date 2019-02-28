@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/Prophets/chef-patissier/issues"
   },
-  "dependencies": {
+  "devDependencies": {
     "ansi-colors": "^3.2.3",
     "chef-patissier": "^0.0.0",
     "webpack": "^4.29.5",

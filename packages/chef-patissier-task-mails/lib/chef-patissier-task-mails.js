@@ -1,11 +1,8 @@
 require('@babel/register')({
-    only: [
+    'only': [
         (file) => file.indexOf('render.js') > 0 || file.indexOf('/src/') > 0
     ],
-    "presets": [
-        "@babel/preset-react",
-        "@babel/preset-env"
-    ]
+    ...require('./babelrc')
 });
 
 const config = require('chef-patissier/lib/configLoader');
@@ -64,7 +61,6 @@ const reactMjmlRender = function () {
     return through.obj(function (file, enc, cb) {
         try{
             const render = require('./render').default;
-
             const { html, error } = render(file.path, file.data, taskConfig.mjml);
 
             if(html) {

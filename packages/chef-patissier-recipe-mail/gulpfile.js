@@ -1,12 +1,3 @@
-require('@babel/register')({
-    only: [
-        (file) => {
-            const cond = file.indexOf(process.cwd() + '/src/') === 0;
-            return cond;
-        }
-    ]
-});
-
 const chef = require('chef-patissier');
 
 const config = {

@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/Prophets/chef-patissier/issues"
   },
-  "dependencies": {
+  "devDependencies": {
     "chef-patissier": "^0.0.0",
     "gulp": "^4.0.0",
     "gulp-rev": "^9.0.0",

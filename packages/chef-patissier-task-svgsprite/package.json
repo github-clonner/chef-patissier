@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/Prophets/chef-patissier/issues"
   },
-  "dependencies": {
+  "devDependencies": {
     "chef-patissier": "^0.0.0",
     "gulp-imagemin": "^5.0.3",
     "gulp-svgstore": "^7.0.1"

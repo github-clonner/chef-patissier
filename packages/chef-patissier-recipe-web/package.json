@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/Prophets/chef-patissier/issues"
   },
-  "dependencies": {
+  "devDependencies": {
     "chef-patissier": "^0.0.0",
     "chef-patissier-task-browsersync": "^0.0.0",
     "chef-patissier-task-clean": "^0.0.0",
@@ -32,7 +32,9 @@
     "chef-patissier-task-templates": "^0.0.0",
     "chef-patissier-task-watch": "^0.0.0",
     "chef-patissier-task-webpack": "^0.0.0",
-    "gulp": "^4.0.0",
+    "gulp": "^4.0.0"
+  },
+  "dependencies": {
     "normalize.css": "^8.0.1",
     "svgxuse": "^1.2.6"
   }

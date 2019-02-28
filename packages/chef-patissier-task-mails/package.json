@@ -28,6 +28,7 @@
     "@babel/preset-env": "^7.3.1",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.0.0",
+    "babel-plugin-auto-import": "^1.0.3",
     "chef-patissier": "^0.0.0",
     "file-exists": "^5.0.1",
     "gulp": "^4.0.0",
@@ -46,6 +47,7 @@
     "react-dom": "^16.8.2",
     "through2": "^3.0.0",
     "vinyl": "^2.2.0",
-    "webpack-stream": "^5.2.1"
+    "webpack-stream": "^5.2.1",
+    "css": "^2.2.4"
   }
 }
