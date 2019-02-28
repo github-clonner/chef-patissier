@@ -21,7 +21,8 @@ const config = {
         }]],
         ['mails'],
         [[ 'mails-overview', { disableWatch: true } ]],
-        [['rev', { ifProduction: true, htmlTask: 'mails' }]]
+        [['rev', { ifProduction: true, htmlTask: 'mails' }]],
+        [['cdn', { ifProduction: true }]]
     ]
 };
 

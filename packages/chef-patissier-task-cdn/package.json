@@ -1,0 +1,34 @@
+{
+  "name": "chef-patissier-task-cdn",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Samuel Joos <sjoos@prophets.be>",
+  "homepage": "https://github.com/Prophets/chef-patissier/tree/master/packages/chef-patissier-task-cdn#readme",
+  "license": "MIT",
+  "main": "lib/chef-patissier-task-cdn.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prophets/chef-patissier.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/Prophets/chef-patissier/issues"
+  },
+  "devDependencies": {
+    "chef-patissier": "^0.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^6.1.0",
+    "gulp": "^4.0.0",
+    "vinyl-ftp": "^0.6.1"
+  }
+}

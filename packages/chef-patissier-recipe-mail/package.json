@@ -38,5 +38,8 @@
     "chef-patissier-task-sizereport": "^0.0.0",
     "chef-patissier-task-stylelint": "^0.0.0",
     "chef-patissier-task-watch": "^0.0.0"
+  },
+  "dependencies": {
+    "chef-patissier-task-cdn": "^0.0.0"
   }
 }

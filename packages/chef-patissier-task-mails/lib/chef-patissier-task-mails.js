@@ -19,6 +19,7 @@ const fs = require('fs');
 const yaml = require('js-yaml');
 const handleErrors = require('chef-patissier/lib/handleErrors');
 const customNotifier = require('chef-patissier/lib/customNotifier');
+const isProductionBuild = require('chef-patissier/lib/isProductionBuild');
 const fileExists = require('file-exists');
 const rename = require('gulp-rename');
 const flatten = require('lodash/flatten');
@@ -26,6 +27,7 @@ const getFolders = require('chef-patissier/lib/getFolders');
 const PluginError = require('plugin-error');
 const replaceExtension = require('replace-ext');
 const through = require('through2');
+const taskEnabled = require('chef-patissier/lib/taskEnabled');
 
 const getLanguages = (folder) => {
     let location = './' + folder;
@@ -86,14 +88,20 @@ const reactMjmlRender = function () {
     });
 }
 
+const getImagesRoot = () => {
+    if (isProductionBuild() && taskEnabled('cdn')) {
+        const cdnConfig = config.getTaskConfig('cdn');
+        return cdnConfig.cdn.path;
+    }
+    return '';
+}
+
 const emailsTask = () => {
     const exclude = path.normalize('!**/{' + taskConfig.excludeFolders.join(',') + '}/**');
 
-    const imagesRoot = global.production ? config.root.cdnPath : '';
-
     const tasks = getFolders(config.root.src).map((folder) => {
 
-        const imagesDestination = imagesRoot + '/' + folder + '/images';
+        const imagesDestination = `${getImagesRoot()}/${folder}/images`;
 
         const subtasks = getLanguages(folder).map((lang) => {
             const paths = {
