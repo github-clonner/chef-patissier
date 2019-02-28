@@ -20,7 +20,10 @@ const config = {
     'tasks': [
         ['clean'],
         ['eslint', 'stylelint'],
-        ['images'],
+        [['images', {
+            src: '*/images',
+            dest: ''
+        }]],
         [['css', {
             src: '*/sass',
             dest: ''
