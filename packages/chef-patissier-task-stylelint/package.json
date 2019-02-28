@@ -26,6 +26,7 @@
   "dependencies": {
     "chef-patissier": "^0.0.0",
     "gulp": "^4.0.0",
+    "gulp-stylelint": "^8.0.0",
     "stylelint": "^9.10.1",
     "stylelint-scss": "^3.5.3"
   }

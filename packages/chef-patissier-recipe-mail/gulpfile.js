@@ -26,7 +26,8 @@ const config = {
             dest: ''
         }]],
         ['mails'],
-        [[ 'mails-overview', { disableWatch: true } ]]
+        [[ 'mails-overview', { disableWatch: true } ]],
+        [['rev', { ifProduction: true, htmlTask: 'mails' }]]
     ]
 };
 
