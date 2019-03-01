@@ -1,5 +1,5 @@
 {
-  "name": "chef-patissier",
+  "name": "dameblanche",
   "version": "0.0.0",
   "description": "Chef patissier meticulously runs his tasks and creates delicious frontend deserts.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Prophets/chef-patissier.git"
+    "url": "git+ssh://git@github.com/Prophets/dameblanche.git"
   },
   "keywords": [
     "gulp",
@@ -24,9 +24,9 @@
   "author": "Prophets",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Prophets/chef-patissier/issues"
+    "url": "https://github.com/Prophets/dameblanche/issues"
   },
-  "homepage": "https://github.com/Prophets/chef-patissier#readme",
+  "homepage": "https://github.com/Prophets/dameblanche#readme",
   "devDependencies": {
     "jest": "^24.1.0",
     "lerna": "^3.13.0"
