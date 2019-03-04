@@ -10,8 +10,11 @@ const dir = flags.dir || args.sub[0] || '.' ;
 
 const exec = async() => {
     try {
+        const recipe = `dameblanche-recipe-${flags.recipe}`;
+        console.log(`Starting dameblanche ${recipe} project`);
+
         // find npm package url
-        const packageUrl = (await shellExec(`npm view dameblanche-recipe-${flags.recipe} dist.tarball`)).stdout.trim();
+        const packageUrl = (await shellExec(`npm view ${recipe} dist.tarball`)).stdout.trim();
         // make dir
         if(dir !== '.') {
             await shellExec(`mkdir -p ${dir}`);
