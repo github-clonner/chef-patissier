@@ -1,6 +1,6 @@
 {
   "name": "@dameblanche/core",
-  "version": "0.0.0",
+  "version": "0.0.1-alpha.0",
   "description": "> TODO: description",
   "author": "Samuel Joos <sjoos@prophets.be>",
   "homepage": "https://github.com/Prophets/dameblanche/tree/master/packages/dameblanche#readme",
@@ -25,10 +25,10 @@
   },
   "dependencies": {
     "ansi-colors": "^3.2.4",
+    "dotenv": "^6.2.0",
     "gulp-notify": "^3.2.0",
     "lodash": "^4.17.11",
-    "minimist": "^1.2.0",
-    "dotenv": "^6.2.0"
+    "minimist": "^1.2.0"
   },
   "peerDependencies": {
     "gulp": ">=4"
