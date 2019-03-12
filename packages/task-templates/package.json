@@ -1,6 +1,6 @@
 {
   "name": "@dameblanche/task-templates",
-  "version": "0.0.0",
+  "version": "0.0.1-alpha.0",
   "description": "> TODO: description",
   "author": "Samuel Joos <sjoos@prophets.be>",
   "homepage": "https://github.com/Prophets/dameblanche/tree/master/packages/dameblanche-task-templates#readme",
@@ -30,8 +30,8 @@
     "gulp-nunjucks-render": "^2.2.2"
   },
   "peerDependencies": {
-    "browser-sync": ">=2",
     "@dameblanche/core": ">=0",
+    "browser-sync": ">=2",
     "gulp": ">=4"
   }
 }
